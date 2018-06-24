@@ -45,7 +45,7 @@ func (c *Cache) GetBySlug(slug string, contentType string, result interface{}) e
 	}
 	defer response.Body.Close()
 	body, err = ioutil.ReadAll(response.Body)
-	fmt.Println(string(body))
+	//fmt.Println(string(body))
 	if err != nil {
 		return err
 	}
@@ -72,7 +72,7 @@ func (c *Cache) Get(id int, contentType string, result interface{}) error {
 	}
 	defer response.Body.Close()
 	body, err = ioutil.ReadAll(response.Body)
-	fmt.Println(string(body))
+	//fmt.Println(string(body))
 	if err != nil {
 		return err
 	}
